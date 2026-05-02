@@ -1,0 +1,33 @@
+{
+  "name": "ebharat-evm",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 8080",
+    "api": "node server/index.js",
+    "dev:full": "concurrently \"npm run api\" \"npm run dev\"",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 8080"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "@supabase/supabase-js": "^2.105.1",
+    "@vitejs/plugin-react": "latest",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.4.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "latest",
+    "morgan": "^1.10.1",
+    "pg": "^8.20.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest",
+    "zod": "^4.4.2",
+    "concurrently": "latest"
+  }
+}
